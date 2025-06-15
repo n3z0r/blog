@@ -1,15 +1,34 @@
 body {
+  background-color: lightgrey;
   color: #222;
   font-family: sans-serif;
   line-height: 1.5;
-  margin: 1rem;
+  margin: 1rem auto;
   max-width: 768px;
 }
 
 header {
   border-bottom: 1px solid #222;
   margin-bottom: 1rem;
+  /* Add flexbox properties to align title and nav */
+  display: flex; /* Make header a flex container */
+  justify-content: space-between; /* Distribute space between items (title and nav) */
+  align-items: center; /* Vertically align items in the center */
 }
+
+/* Add a rule for the navigation list to display items horizontally */
+header nav ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Make the list a flex container */
+  gap: 1rem; /* Add space between list items */
+}
+
+/* Optional: Add some margin to list items if needed */
+/* header nav ul li {
+  margin-left: 1rem;
+} */
 
 footer {
   border-top: 1px solid #222;
