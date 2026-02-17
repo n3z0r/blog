@@ -4,3 +4,5 @@ draft: false
 title: 'Post 0'
 tags: 'new'
 ---
+
+This Post 0

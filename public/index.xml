@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on N3z0r</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.n3zor.com/</link>
     <description>Recent content in Home on N3z0r</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Jun 2025 19:31:36 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.n3zor.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post 0</title>
-      <link>http://localhost:1313/posts/post-0/</link>
+      <link>https://www.n3zor.com/posts/post-0/</link>
       <pubDate>Sun, 15 Jun 2025 19:31:36 +0100</pubDate>
-      <guid>http://localhost:1313/posts/post-0/</guid>
-      <description></description>
+      <guid>https://www.n3zor.com/posts/post-0/</guid>
+      <description>&lt;p&gt;This Post 0&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
