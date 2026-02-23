@@ -1,7 +1,8 @@
 ---
 date: '2026-02-23T17:43:16Z'
-draft: true
+draft: false
 title: 'Open Project VM Installation'
+tags: ["Open Project", "VM", "Ubuntu", "PostgreSQL", "Apache", "Memcached", "Ubuntu 22.04", "Ubuntu 24.04"]
 ---
 
 # Open Project local env setup
