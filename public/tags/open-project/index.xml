@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on N3z0r</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on N3z0r</description>
+    <title>Open Project on N3z0r</title>
+    <link>http://localhost:1313/tags/open-project/</link>
+    <description>Recent content in Open Project on N3z0r</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Feb 2026 15:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Empty Post</title>
-      <link>http://localhost:1313/posts/empty-post/</link>
-      <pubDate>Wed, 25 Feb 2026 15:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/empty-post/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Mon, 23 Feb 2026 17:43:16 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/open-project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Project VM Installation</title>
       <link>http://localhost:1313/posts/open-project/</link>
       <pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
       <guid>http://localhost:1313/posts/open-project/</guid>
       <description>&lt;h1 id=&#34;open-project-local-env-setup&#34;&gt;Open Project local env setup&lt;/h1&gt;&#xA;&lt;h2 id=&#34;create-new-vm&#34;&gt;Create new vm&lt;/h2&gt;&#xA;&lt;p&gt;Install Ubuntu 22.04 server 2cpu/4GB ram/40GB space&#xA;Take Snapshot-0&lt;/p&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Find app release package &lt;a href=&#34;https://packager.io/gh/opf/openproject/builds/12998/install/ubuntu-22.04&#34;&gt;https://packager.io/gh/opf/openproject/builds/12998/install/ubuntu-22.04&lt;/a&gt;&#xA;We are on 15.1.0&lt;/p&gt;&#xA;&lt;h3 id=&#34;install-the-app&#34;&gt;Install the app&lt;/h3&gt;&#xA;&lt;p&gt;wget -qO- &lt;a href=&#34;https://dl.packager.io/srv/opf/openproject/key&#34;&gt;https://dl.packager.io/srv/opf/openproject/key&lt;/a&gt; | sudo apt-key add - [This changes to the next line because apt-key is deprecated]&#xA;wget -qO- &lt;a href=&#34;https://dl.packager.io/srv/opf/openproject/key&#34;&gt;https://dl.packager.io/srv/opf/openproject/key&lt;/a&gt; | sudo tee /etc/apt/trusted.gpg.d/&#xA;sudo wget -O /etc/apt/sources.list.d/openproject.list &lt;br&gt;&#xA;&lt;a href=&#34;https://dl.packager.io/srv/opf/openproject/release/15.1/installer/ubuntu/22.04.repo&#34;&gt;https://dl.packager.io/srv/opf/openproject/release/15.1/installer/ubuntu/22.04.repo&lt;/a&gt;&#xA;sudo apt-get update&#xA;sudo apt-get install openproject&lt;/p&gt;&#xA;&lt;p&gt;Take Snapshot-1&lt;/p&gt;&#xA;&lt;h3 id=&#34;configure-the-app&#34;&gt;Configure the app&lt;/h3&gt;&#xA;&lt;p&gt;sudo openproject reconfigure&#xA;Selected edition: default&#xA;postgress: install&#xA;Server: Install apache2&#xA;hostname: 192.168.1.60&#xA;prefix:op&#xA;TLS: no&#xA;API KEY: copy this value somewhere safe&#xA;svn: skip&#xA;git: skip&#xA;memcached: install&#xA;admin email: [EMAIL_ADDRESS]&#xA;language: English&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Post 0</title>
-      <link>http://localhost:1313/posts/post-0/</link>
-      <pubDate>Sun, 15 Jun 2025 19:31:36 +0100</pubDate>
-      <guid>http://localhost:1313/posts/post-0/</guid>
-      <description>&lt;p&gt;This Post 0&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

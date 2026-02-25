@@ -2,17 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on N3z0r</title>
-    <link>https://www.n3zor.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on N3z0r</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Jun 2025 19:31:36 +0100</lastBuildDate>
-    <atom:link href="https://www.n3zor.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Feb 2026 17:43:16 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache</title>
+      <link>http://localhost:1313/tags/apache/</link>
+      <pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
+      <guid>http://localhost:1313/tags/apache/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memcached</title>
+      <link>http://localhost:1313/tags/memcached/</link>
+      <pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
+      <guid>http://localhost:1313/tags/memcached/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Project</title>
+      <link>http://localhost:1313/tags/open-project/</link>
+      <pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
+      <guid>http://localhost:1313/tags/open-project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PostgreSQL</title>
+      <link>http://localhost:1313/tags/postgresql/</link>
+      <pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
+      <guid>http://localhost:1313/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu</title>
+      <link>http://localhost:1313/tags/ubuntu/</link>
+      <pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu 22.04</title>
+      <link>http://localhost:1313/tags/ubuntu-22.04/</link>
+      <pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ubuntu-22.04/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu 24.04</title>
+      <link>http://localhost:1313/tags/ubuntu-24.04/</link>
+      <pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ubuntu-24.04/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VM</title>
+      <link>http://localhost:1313/tags/vm/</link>
+      <pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
+      <guid>http://localhost:1313/tags/vm/</guid>
+      <description></description>
+    </item>
     <item>
       <title>New</title>
-      <link>https://www.n3zor.com/tags/new/</link>
+      <link>http://localhost:1313/tags/new/</link>
       <pubDate>Sun, 15 Jun 2025 19:31:36 +0100</pubDate>
-      <guid>https://www.n3zor.com/tags/new/</guid>
+      <guid>http://localhost:1313/tags/new/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blue</title>
+      <link>http://localhost:1313/tags/blue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/blue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Green</title>
+      <link>http://localhost:1313/tags/green/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/green/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Red</title>
+      <link>http://localhost:1313/tags/red/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/red/</guid>
       <description></description>
     </item>
   </channel>
