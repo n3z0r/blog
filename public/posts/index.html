@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Posts | N3z0r</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="/css/main.min.2643bdce75b74859b209168279e984c0b6db8917cd7c8897fd5cb779e03a0d2e.css" integrity="sha256-JkO9znW3SFmyCRaCeemEwLbbiRfNfIiX/Vy3eeA6DS4=" crossorigin="anonymous">
 
 
-      <script src="/js/main.js"></script>
+        <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -22,7 +22,7 @@
       <a href="/">Home</a>
     </li>
     <li>
-      <a href="/posts/">Posts</a>
+      <a aria-current="page" class="active" href="/posts/">Posts</a>
     </li>
     <li>
       <a href="/tags/">Tags</a>
@@ -38,42 +38,14 @@
   <p>Tempor est exercitation ad qui pariatur quis adipisicing aliquip nisi ea consequat ipsum occaecat. Nostrud consequat ullamco laboris fugiat esse esse adipisicing velit laborum ipsum incididunt ut enim. Dolor pariatur nulla quis fugiat dolore excepteur. Aliquip ad quis aliqua enim do consequat.</p>
 
   
-    <h2><a href="/posts/empty-post/">Empty Post</a></h2>
-    
-  
     <h2><a href="/posts/open-project/">Open Project VM Installation</a></h2>
     <h1 id="open-project-local-env-setup">Open Project local env setup</h1>
-<h2 id="create-new-vm">Create new vm</h2>
-<p>Install Ubuntu 22.04 server 2cpu/4GB ram/40GB space
-Take Snapshot-0</p>
-<h2 id="installation">Installation</h2>
-<p>Find app release package <a href="https://packager.io/gh/opf/openproject/builds/12998/install/ubuntu-22.04">https://packager.io/gh/opf/openproject/builds/12998/install/ubuntu-22.04</a>
-We are on 15.1.0</p>
-<h3 id="install-the-app">Install the app</h3>
-<p>wget -qO- <a href="https://dl.packager.io/srv/opf/openproject/key">https://dl.packager.io/srv/opf/openproject/key</a> | sudo apt-key add - [This changes to the next line because apt-key is deprecated]
-wget -qO- <a href="https://dl.packager.io/srv/opf/openproject/key">https://dl.packager.io/srv/opf/openproject/key</a> | sudo tee /etc/apt/trusted.gpg.d/
-sudo wget -O /etc/apt/sources.list.d/openproject.list <br>
-<a href="https://dl.packager.io/srv/opf/openproject/release/15.1/installer/ubuntu/22.04.repo">https://dl.packager.io/srv/opf/openproject/release/15.1/installer/ubuntu/22.04.repo</a>
-sudo apt-get update
-sudo apt-get install openproject</p>
-<p>Take Snapshot-1</p>
-<h3 id="configure-the-app">Configure the app</h3>
-<p>sudo openproject reconfigure
-Selected edition: default
-postgress: install
-Server: Install apache2
-hostname: 192.168.1.60
-prefix:op
-TLS: no
-API KEY: copy this value somewhere safe
-svn: skip
-git: skip
-memcached: install
-admin email: [EMAIL_ADDRESS]
-language: English</p>
+<p>A guide on how to setup Open Project on a local vm</p>
+    <div><a href="/posts/open-project/">Read more...</a></div>
   
     <h2><a href="/posts/post-0/">Post 0</a></h2>
     <p>This Post 0</p>
+    <div><a href="/posts/post-0/">Read more...</a></div>
   
 
   </main>

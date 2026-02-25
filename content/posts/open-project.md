@@ -7,6 +7,10 @@ tags: ["Open Project", "VM", "Ubuntu", "PostgreSQL", "Apache", "Memcached", "Ubu
 
 # Open Project local env setup
 
+A guide on how to setup Open Project on a local vm
+
+<!--more-->
+
 ## Create new vm
 Install Ubuntu 22.04 server 2cpu/4GB ram/40GB space
 Take Snapshot-0
