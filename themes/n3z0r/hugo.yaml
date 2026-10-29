@@ -1,6 +1,6 @@
 baseURL: https://www.n3z0r.com
 author: N3z0r
-languageCode: en-US
+locale: en-US
 menus:
   main:
   - name: Home
@@ -15,5 +15,5 @@ menus:
 module:
   hugoVersion:
     extended: false
-    min: 0.146.0
+    min: 0.158.0
 title: N3z0r
