@@ -1,2 +1,23 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+{{ $avatar := or site.Params.avatar "/images/avatar.svg" }}
+{{ $homeURL := site.Home.RelPermalink }}
+{{ $homeLabel := printf "@%s" (lower site.Title) }}
+{{ $orbitItems := slice }}
+{{ range site.Menus.main }}
+  {{ if eq .Identifier "home" }}
+    {{ $homeURL = .URL }}
+    {{ $homeLabel = .Name }}
+  {{ else }}
+    {{ $orbitItems = $orbitItems | append . }}
+  {{ end }}
+{{ end }}
+<div class="profile-header">
+  <nav class="profile-ring" aria-label="Main navigation">
+    {{ range $index, $item := $orbitItems }}
+      <a href="{{ $item.URL }}" class="orbit-icon" style="--i: {{ $index }};" title="{{ $item.Name }}" aria-label="{{ $item.Name }}">
+        <span class="orbit-label">{{ $item.Name }}</span>
+      </a>
+    {{ end }}
+    <img src="{{ $avatar | relURL }}" alt="{{ site.Title }}" class="profile-avatar" />
+  </nav>
+  <a href="{{ $homeURL }}" class="profile-handle">{{ $homeLabel }}</a>
+</div>
