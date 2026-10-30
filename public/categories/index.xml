@@ -1,1 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on N3z0r</title><link>https://www.n3z0r.com/categories/</link><description>Recent content in Categories on N3z0r</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://www.n3z0r.com/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>AI</title><link>https://www.n3z0r.com/ai/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.n3z0r.com/ai/</guid><description/></item><item><title>Cloud</title><link>https://www.n3z0r.com/cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.n3z0r.com/cloud/</guid><description/></item><item><title>Homelab</title><link>https://www.n3z0r.com/homelab/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.n3z0r.com/homelab/</guid><description/></item><item><title>Linux</title><link>https://www.n3z0r.com/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.n3z0r.com/linux/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Categories on N3z0r</title>
+		<link>http://localhost:1313/categories/</link>
+		<description>Recent content in Categories on N3z0r</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>AI</title>
+				<link>http://localhost:1313/ai/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/ai/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cloud</title>
+				<link>http://localhost:1313/cloud/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/cloud/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Homelab</title>
+				<link>http://localhost:1313/homelab/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/homelab/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Linux</title>
+				<link>http://localhost:1313/linux/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/linux/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

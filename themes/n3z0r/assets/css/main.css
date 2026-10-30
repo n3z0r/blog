@@ -72,6 +72,17 @@ header {
   pointer-events: none;
 }
 
+.orbit-glyph {
+  display: flex;
+  pointer-events: none;
+}
+
+.orbit-glyph svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.75;
+}
+
 .orbit-icon:hover {
   border-color: #00e;
   transform: rotate(var(--angle)) translate(var(--orbit-radius)) rotate(calc(-1 * var(--angle))) scale(1.12);
