@@ -11,38 +11,56 @@ menus:
     name: CV
     url: /cv/
     weight: 10
+    params:
+      icon: cv
   - identifier: github
     name: GitHub
     url: https://github.com/n3z0r
     weight: 20
+    params:
+      icon: github
   - identifier: ai
     name: AI
     url: /ai/
     weight: 30
+    params:
+      icon: ai
   - identifier: homelab
     name: Homelab
     url: /homelab/
     weight: 40
+    params:
+      icon: homelab
   - identifier: cloud
     name: Cloud
     url: /cloud/
     weight: 50
+    params:
+      icon: cloud
   - identifier: linux
     name: Linux
     url: /linux/
     weight: 60
+    params:
+      icon: linux
   - identifier: posts
     name: Posts
     pageRef: /posts
     weight: 70
+    params:
+      icon: posts
   - identifier: linkedin
     name: LinkedIn
     url: https://www.linkedin.com/
     weight: 80
+    params:
+      icon: linkedin
   - identifier: x
     name: X
     url: https://x.com/
     weight: 90
+    params:
+      icon: x
 permalinks:
   term:
     categories: /:slug/

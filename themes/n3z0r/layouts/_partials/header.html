@@ -13,8 +13,18 @@
 <div class="profile-header">
   <nav class="profile-ring" aria-label="Main navigation">
     {{ range $index, $item := $orbitItems }}
+      {{ $glyph := "" }}
+      {{ with $item.Params.icon }}
+        {{ with resources.Get (printf "icons/%s.svg" .) }}
+          {{ $glyph = .Content }}
+        {{ end }}
+      {{ end }}
       <a href="{{ $item.URL }}" class="orbit-icon" style="--i: {{ $index }};" title="{{ $item.Name }}" aria-label="{{ $item.Name }}">
-        <span class="orbit-label">{{ $item.Name }}</span>
+        {{ with $glyph }}
+          <span class="orbit-glyph" aria-hidden="true">{{ . | safeHTML }}</span>
+        {{ else }}
+          <span class="orbit-label" aria-hidden="true">{{ $item.Name }}</span>
+        {{ end }}
       </a>
     {{ end }}
     <img src="{{ $avatar | relURL }}" alt="{{ site.Title }}" class="profile-avatar" />
