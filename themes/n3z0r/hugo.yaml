@@ -3,15 +3,46 @@ author: N3z0r
 locale: en-US
 menus:
   main:
-  - name: Home
+  - identifier: home
+    name: "@n3z0r"
     pageRef: /
+    weight: 1
+  - identifier: cv
+    name: CV
+    url: /cv/
     weight: 10
-  - name: Posts
-    pageRef: /posts
+  - identifier: github
+    name: GitHub
+    url: https://github.com/n3z0r
     weight: 20
-  - name: Tags
-    pageRef: /tags
+  - identifier: ai
+    name: AI
+    url: /categories/ai/
     weight: 30
+  - identifier: homelab
+    name: Homelab
+    url: /categories/homelab/
+    weight: 40
+  - identifier: cloud
+    name: Cloud
+    url: /categories/cloud/
+    weight: 50
+  - identifier: linux
+    name: Linux
+    url: /categories/linux/
+    weight: 60
+  - identifier: posts
+    name: Posts
+    pageRef: /posts
+    weight: 70
+  - identifier: linkedin
+    name: LinkedIn
+    url: https://www.linkedin.com/
+    weight: 80
+  - identifier: x
+    name: X
+    url: https://x.com/
+    weight: 90
 module:
   hugoVersion:
     extended: false
