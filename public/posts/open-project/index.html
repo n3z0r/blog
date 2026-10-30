@@ -1,63 +1,19 @@
-<!DOCTYPE html>
-<html lang="en-us" dir="ltr">
-<head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>Open Project VM Installation | N3z0r</title>
-
-      <link rel="stylesheet" href="/css/main.min.2643bdce75b74859b209168279e984c0b6db8917cd7c8897fd5cb779e03a0d2e.css" integrity="sha256-JkO9znW3SFmyCRaCeemEwLbbiRfNfIiX/Vy3eeA6DS4=" crossorigin="anonymous">
-
-
-        <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
-
-
-</head>
-<body>
-  <header>
-    <h1>N3z0r</h1>
-
-  <nav>
-    <ul>
-    <li>
-      <a href="/">Home</a>
-    </li>
-    <li>
-      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
-    </li>
-    <li>
-      <a href="/tags/">Tags</a>
-    </li>
-    </ul>
-  </nav>
-
-
-  </header>
-  <main>
-    
-  <h1>Open Project VM Installation</h1>
-
-  
-  
-  <time datetime="2026-02-23T17:43:16&#43;00:00">February 23, 2026</time>
-
-  <h1 id="open-project-local-env-setup">Open Project local env setup</h1>
-<p>A guide on how to setup Open Project on a local vm</p>
-<h2 id="create-new-vm">Create new vm</h2>
-<p>Install Ubuntu 22.04 server 2cpu/4GB ram/40GB space
-Take Snapshot-0</p>
-<h2 id="installation">Installation</h2>
-<p>Find app release package <a href="https://packager.io/gh/opf/openproject/builds/12998/install/ubuntu-22.04">https://packager.io/gh/opf/openproject/builds/12998/install/ubuntu-22.04</a>
-We are on 15.1.0</p>
-<h3 id="install-the-app">Install the app</h3>
-<p>wget -qO- <a href="https://dl.packager.io/srv/opf/openproject/key">https://dl.packager.io/srv/opf/openproject/key</a> | sudo apt-key add - [This changes to the next line because apt-key is deprecated]
-wget -qO- <a href="https://dl.packager.io/srv/opf/openproject/key">https://dl.packager.io/srv/opf/openproject/key</a> | sudo tee /etc/apt/trusted.gpg.d/
-sudo wget -O /etc/apt/sources.list.d/openproject.list <br>
-<a href="https://dl.packager.io/srv/opf/openproject/release/15.1/installer/ubuntu/22.04.repo">https://dl.packager.io/srv/opf/openproject/release/15.1/installer/ubuntu/22.04.repo</a>
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Open Project VM Installation | N3z0r</title><link rel=stylesheet href=/css/main.min.cb913bcb9c630a5bcf5d631a9582ddc1ceffad87095fd7b734e298229e662769.css integrity="sha256-y5E7y5xjClvPXWMalYLdwc7/rYcJX9e3NOKYIp5mJ2k=" crossorigin=anonymous><script src=/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js integrity="sha256-I80MfYNyY7nq65buLZzPopadqj+gD6HB/ocBqbhyUaE=" crossorigin=anonymous></script></head><body><header><div class=profile-header><nav class=profile-ring aria-label="Main navigation"><a href=/cv/ class=orbit-icon style=--i:0 title=CV aria-label=CV><span class=orbit-label>CV</span>
+</a><a href=https://github.com/n3z0r class=orbit-icon style=--i:1 title=GitHub aria-label=GitHub><span class=orbit-label>GitHub</span>
+</a><a href=/ai/ class=orbit-icon style=--i:2 title=AI aria-label=AI><span class=orbit-label>AI</span>
+</a><a href=/homelab/ class=orbit-icon style=--i:3 title=Homelab aria-label=Homelab><span class=orbit-label>Homelab</span>
+</a><a href=/cloud/ class=orbit-icon style=--i:4 title=Cloud aria-label=Cloud><span class=orbit-label>Cloud</span>
+</a><a href=/linux/ class=orbit-icon style=--i:5 title=Linux aria-label=Linux><span class=orbit-label>Linux</span>
+</a><a href=/posts/ class=orbit-icon style=--i:6 title=Posts aria-label=Posts><span class=orbit-label>Posts</span>
+</a><a href=https://www.linkedin.com/ class=orbit-icon style=--i:7 title=LinkedIn aria-label=LinkedIn><span class=orbit-label>LinkedIn</span>
+</a><a href=https://x.com/ class=orbit-icon style=--i:8 title=X aria-label=X><span class=orbit-label>X</span>
+</a><img src=/images/avatar.svg alt=N3z0r class=profile-avatar></nav><a href=/ class=profile-handle>@n3z0r</a></div></header><main><h1>Open Project VM Installation</h1><time datetime=2026-02-23T17:43:16+00:00>February 23, 2026</time><h1 id=open-project-local-env-setup>Open Project local env setup</h1><p>A guide on how to setup Open Project on a local vm</p><h2 id=create-new-vm>Create new vm</h2><p>Install Ubuntu 22.04 server 2cpu/4GB ram/40GB space
+Take Snapshot-0</p><h2 id=installation>Installation</h2><p>Find app release package <a href=https://packager.io/gh/opf/openproject/builds/12998/install/ubuntu-22.04>https://packager.io/gh/opf/openproject/builds/12998/install/ubuntu-22.04</a>
+We are on 15.1.0</p><h3 id=install-the-app>Install the app</h3><p>wget -qO- <a href=https://dl.packager.io/srv/opf/openproject/key>https://dl.packager.io/srv/opf/openproject/key</a> | sudo apt-key add - [This changes to the next line because apt-key is deprecated]
+wget -qO- <a href=https://dl.packager.io/srv/opf/openproject/key>https://dl.packager.io/srv/opf/openproject/key</a> | sudo tee /etc/apt/trusted.gpg.d/
+sudo wget -O /etc/apt/sources.list.d/openproject.list<br><a href=https://dl.packager.io/srv/opf/openproject/release/15.1/installer/ubuntu/22.04.repo>https://dl.packager.io/srv/opf/openproject/release/15.1/installer/ubuntu/22.04.repo</a>
 sudo apt-get update
-sudo apt-get install openproject</p>
-<p>Take Snapshot-1</p>
-<h3 id="configure-the-app">Configure the app</h3>
-<p>sudo openproject reconfigure
+sudo apt-get install openproject</p><p>Take Snapshot-1</p><h3 id=configure-the-app>Configure the app</h3><p>sudo openproject reconfigure
 Selected edition: default
 postgress: install
 Server: Install apache2
@@ -69,31 +25,5 @@ svn: skip
 git: skip
 memcached: install
 admin email: [EMAIL_ADDRESS]
-language: English</p>
-<p>Take snapshot-2</p>
-<h3 id="login-and-set-password">Login and set password</h3>
-<p>Username: admin
-Password: set your own password</p>
-  
-  <div>
-    <div>Tags:</div>
-    <ul>
-        <li><a href="/tags/open-project/">Open Project</a></li>
-        <li><a href="/tags/vm/">VM</a></li>
-        <li><a href="/tags/ubuntu/">Ubuntu</a></li>
-        <li><a href="/tags/postgresql/">PostgreSQL</a></li>
-        <li><a href="/tags/apache/">Apache</a></li>
-        <li><a href="/tags/memcached/">Memcached</a></li>
-        <li><a href="/tags/ubuntu-22.04/">Ubuntu 22.04</a></li>
-        <li><a href="/tags/ubuntu-24.04/">Ubuntu 24.04</a></li>
-    </ul>
-  </div>
-
-
-  </main>
-  <footer>
-    <p>Copyright 2026. All rights reserved.</p>
-
-  </footer>
-</body>
-</html>
+language: English</p><p>Take snapshot-2</p><h3 id=login-and-set-password>Login and set password</h3><p>Username: admin
+Password: set your own password</p><div><div>Tags:</div><ul><li><a href=/tags/open-project/>Open Project</a></li><li><a href=/tags/vm/>VM</a></li><li><a href=/tags/ubuntu/>Ubuntu</a></li><li><a href=/tags/postgresql/>PostgreSQL</a></li><li><a href=/tags/apache/>Apache</a></li><li><a href=/tags/memcached/>Memcached</a></li><li><a href=/tags/ubuntu-22.04/>Ubuntu 22.04</a></li><li><a href=/tags/ubuntu-24.04/>Ubuntu 24.04</a></li></ul></div></main><footer><p>Copyright 2026. All rights reserved.</p></footer></body></html>

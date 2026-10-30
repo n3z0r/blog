@@ -4,3 +4,7 @@ locale: en-us
 title: N3z0r
 description: Your friendly IT guy
 theme: n3z0r
+permalinks:
+  term:
+    categories: /:slug/
+

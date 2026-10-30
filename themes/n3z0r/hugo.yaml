@@ -17,19 +17,19 @@ menus:
     weight: 20
   - identifier: ai
     name: AI
-    url: /categories/ai/
+    url: /ai/
     weight: 30
   - identifier: homelab
     name: Homelab
-    url: /categories/homelab/
+    url: /homelab/
     weight: 40
   - identifier: cloud
     name: Cloud
-    url: /categories/cloud/
+    url: /cloud/
     weight: 50
   - identifier: linux
     name: Linux
-    url: /categories/linux/
+    url: /linux/
     weight: 60
   - identifier: posts
     name: Posts
@@ -43,6 +43,9 @@ menus:
     name: X
     url: https://x.com/
     weight: 90
+permalinks:
+  term:
+    categories: /:slug/
 module:
   hugoVersion:
     extended: false
