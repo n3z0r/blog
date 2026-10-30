@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Memcached on N3z0r</title>
-		<link>https://www.n3z0r.com/tags/memcached/</link>
+		<link>http://localhost:1313/tags/memcached/</link>
 		<description>Recent content in Memcached on N3z0r</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Mon, 23 Feb 2026 17:43:16 +0000</lastBuildDate>
 		
-			<atom:link href="https://www.n3z0r.com/tags/memcached/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/memcached/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Open Project VM Installation</title>
-				<link>https://www.n3z0r.com/posts/open-project/</link>
+				<link>http://localhost:1313/posts/open-project/</link>
 				<pubDate>Mon, 23 Feb 2026 17:43:16 +0000</pubDate>
-				<guid>https://www.n3z0r.com/posts/open-project/</guid>
+				<guid>http://localhost:1313/posts/open-project/</guid>
 				<description>&lt;h1 id=&#34;open-project-local-env-setup&#34;&gt;Open Project local env setup&lt;/h1&gt;&#xA;&lt;p&gt;A guide on how to setup Open Project on a local vm&lt;/p&gt;</description>
 			</item>
 	</channel>
