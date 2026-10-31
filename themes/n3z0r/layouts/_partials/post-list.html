@@ -1,0 +1,61 @@
+<section class="posts-section">
+  <div class="posts-header">
+    <h1 class="posts-title">{{ .Title }}</h1>
+    {{ if .Pages }}
+      <span class="posts-count">{{ len .Pages }} {{ cond (eq (len .Pages) 1) "post" "posts" }}</span>
+    {{ end }}
+  </div>
+
+  {{ with .Content }}
+    <div class="posts-intro">
+      {{ . }}
+    </div>
+  {{ end }}
+
+  {{ if .Pages }}
+    <div class="post-list">
+      {{ range .Pages }}
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := .Date | time.Format ":date_medium" }}
+        {{ $readTime := .ReadingTime }}
+        {{ if lt $readTime 1 }}{{ $readTime = 1 }}{{ end }}
+        <article class="post-card">
+          <div class="post-card-meta">
+            <time class="post-card-date" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+            <span class="post-card-sep" aria-hidden="true">&middot;</span>
+            <span class="post-card-reading-time">{{ $readTime }} min read</span>
+          </div>
+
+          <h2 class="post-card-title">
+            <a href="{{ .RelPermalink }}" class="post-card-link">{{ .LinkTitle }}</a>
+          </h2>
+
+          {{ $summary := .Summary | plainify | chomp }}
+          {{ with $summary }}
+            <p class="post-card-summary">{{ . }}</p>
+          {{ end }}
+
+          {{ $categories := .GetTerms "categories" }}
+          {{ $tags := .GetTerms "tags" }}
+          <div class="post-card-footer">
+            {{ if or $categories $tags }}
+              <ul class="post-card-tags" aria-label="Post topics">
+                {{ range $categories }}
+                  <li><a href="{{ .RelPermalink }}" class="post-pill post-pill--category">{{ .LinkTitle }}</a></li>
+                {{ end }}
+                {{ range $tags }}
+                  <li><a href="{{ .RelPermalink }}" class="post-pill">{{ .LinkTitle }}</a></li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            <a href="{{ .RelPermalink }}" class="post-card-cta">
+              Read article <span class="post-card-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="posts-empty">No posts published yet.</p>
+  {{ end }}
+</section>
