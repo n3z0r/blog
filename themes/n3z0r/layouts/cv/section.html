@@ -1,0 +1,134 @@
+{{- /*
+Single-page CV layout for the /cv/ section.
+All content comes from the `params` block in content/cv/_index.md.
+*/ -}}
+{{ define "main" }}
+  {{ $p := .Params }}
+  <section class="cv">
+    <div class="cv-head">
+      <h1 class="cv-title">{{ .Title }}</h1>
+      {{ with $p.headline }}<span class="cv-headline">{{ . }}</span>{{ end }}
+    </div>
+
+    {{ with $p.profile }}
+      <p class="cv-profile">{{ . }}</p>
+    {{ end }}
+
+    {{ with $p.highlights }}
+      <ul class="cv-highlights">
+        {{ range $i, $h := . }}
+          <li class="cv-highlight">
+            <button
+              type="button"
+              class="cv-highlight-trigger"
+              aria-haspopup="dialog"
+              aria-controls="cv-highlight-dialog-{{ $i }}"
+            >
+              <span class="cv-highlight-value">{{ $h.value }}</span>
+              <span class="cv-highlight-label">{{ $h.label }}</span>
+            </button>
+          </li>
+        {{ end }}
+      </ul>
+      {{ range $i, $h := . }}
+        <dialog
+          class="cv-dialog"
+          id="cv-highlight-dialog-{{ $i }}"
+          aria-labelledby="cv-highlight-dialog-title-{{ $i }}"
+        >
+          <div class="cv-dialog-card">
+            <header class="cv-dialog-head">
+              <h3 class="cv-dialog-title" id="cv-highlight-dialog-title-{{ $i }}">
+                <span class="cv-highlight-value">{{ $h.value }}</span>
+                <span class="cv-highlight-label">{{ $h.label }}</span>
+              </h3>
+            </header>
+            <div class="cv-dialog-body">
+              {{ range $h.detail }}<p>{{ . }}</p>{{ end }}
+            </div>
+            <button type="button" class="cv-dialog-close" aria-label="Close">×</button>
+          </div>
+        </dialog>
+      {{ end }}
+    {{ end }}
+
+    {{ with $p.experience }}
+      <section class="cv-block" aria-labelledby="cv-experience">
+        <h2 id="cv-experience" class="cv-block-title">Experience</h2>
+        <ol class="cv-timeline">
+          {{ range . }}
+            <li class="cv-entry">
+              <span class="cv-period">{{ .period }}</span>
+              <div class="cv-card">
+                <h3 class="cv-role">{{ .role }}</h3>
+                <p class="cv-org">{{ .org }}</p>
+                {{ with .summary }}
+                  {{ if reflect.IsSlice . }}
+                    <div class="cv-entry-summary">
+                      {{ range . }}<p>{{ . }}</p>{{ end }}
+                    </div>
+                  {{ else }}
+                    <p class="cv-entry-summary">{{ . }}</p>
+                  {{ end }}
+                {{ end }}
+                {{ with .tags }}
+                  <ul class="cv-tags" aria-label="Technologies">
+                    {{ range . }}<li class="cv-tag">{{ . }}</li>{{ end }}
+                  </ul>
+                {{ end }}
+              </div>
+            </li>
+          {{ end }}
+        </ol>
+      </section>
+    {{ end }}
+
+    {{ with $p.skills }}
+      <section class="cv-block" aria-labelledby="cv-skills">
+        <h2 id="cv-skills" class="cv-block-title">Skills</h2>
+        <div class="cv-skills">
+          {{ range . }}
+            <div class="cv-card cv-skill-group">
+              <h3 class="cv-skill-title">{{ .group }}</h3>
+              <ul class="cv-tags cv-tags--plain">
+                {{ range .items }}<li class="cv-tag">{{ . }}</li>{{ end }}
+              </ul>
+            </div>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ range $key, $label := dict "certifications" "Certifications" "education" "Education" }}
+      {{ with index $p $key }}
+        <section class="cv-block" aria-labelledby="cv-{{ $key }}">
+          <h2 id="cv-{{ $key }}" class="cv-block-title">{{ $label }}</h2>
+          <ul class="cv-list">
+            {{ range . }}
+              <li class="cv-card cv-list-item">
+                <div>
+                  <h3 class="cv-list-title">{{ .title }}</h3>
+                  {{ with .detail }}<p class="cv-list-detail">{{ . }}</p>{{ end }}
+                </div>
+                {{ with .period }}<span class="cv-list-period">{{ . }}</span>{{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+    {{ end }}
+
+    {{ with $p.interests }}
+      <section class="cv-block" aria-labelledby="cv-interests">
+        <h2 id="cv-interests" class="cv-block-title">Interests</h2>
+        <ul class="cv-tags cv-tags--plain">
+          {{ range . }}<li class="cv-tag">{{ . }}</li>{{ end }}
+        </ul>
+      </section>
+    {{ end }}
+
+    {{ with .Content }}
+      <div class="cv-notes">{{ . }}</div>
+    {{ end }}
+  </section>
+{{ end }}
