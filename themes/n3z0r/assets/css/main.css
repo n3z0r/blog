@@ -659,16 +659,62 @@ body > header {
 
 /* Skills */
 .cv-skills {
+  margin: 0;
+  padding: 0.35rem 1.4rem;
+}
+
+.cv-skill-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.9rem;
+  grid-template-columns: 12rem 1fr;
+  gap: 0;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #cfd4de;
+}
+
+.cv-skill-row:last-child {
+  border-bottom: 0;
 }
 
 .cv-skill-title {
-  font-size: 0.95rem;
+  margin: 0;
+  padding-right: 1.15rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  margin: 0 0 0.65rem;
-  color: #1c2028;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: right;
+  color: #4f638c;
+}
+
+.cv-skill-items {
+  margin: 0;
+  padding-left: 1.15rem;
+  border-left: 2px solid #bbc1cc;
+}
+
+.cv-skill-items ul {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #2b303c;
+}
+
+.cv-skill-items li {
+  white-space: nowrap;
+}
+
+.cv-skill-items li:not(:last-child)::after {
+  content: "·";
+  margin: 0 0.5rem;
+  font-weight: 400;
+  color: #8b95a7;
 }
 
 /* Education / certifications */
@@ -733,6 +779,25 @@ body > header {
 
   .cv-card {
     padding: 1.1rem 1.15rem;
+  }
+
+  .cv-skills {
+    padding: 0.25rem 1.15rem;
+  }
+
+  .cv-skill-row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+
+  .cv-skill-title {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .cv-skill-items {
+    padding-left: 0;
+    border-left: 0;
   }
 }
 
