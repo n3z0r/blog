@@ -52,6 +52,24 @@ All content comes from the `params` block in content/cv/_index.md.
       {{ end }}
     {{ end }}
 
+    {{ with $p.skills }}
+      <section class="cv-block" aria-labelledby="cv-skills">
+        <h2 id="cv-skills" class="cv-block-title">Skills</h2>
+        <dl class="cv-card cv-skills">
+          {{ range . }}
+            <div class="cv-skill-row">
+              <dt class="cv-skill-title">{{ .group }}</dt>
+              <dd class="cv-skill-items">
+                <ul>
+                  {{ range .items }}<li>{{ . }}</li>{{ end }}
+                </ul>
+              </dd>
+            </div>
+          {{ end }}
+        </dl>
+      </section>
+    {{ end }}
+
     {{ with $p.experience }}
       <section class="cv-block" aria-labelledby="cv-experience">
         <h2 id="cv-experience" class="cv-block-title">Experience</h2>
@@ -80,22 +98,6 @@ All content comes from the `params` block in content/cv/_index.md.
             </li>
           {{ end }}
         </ol>
-      </section>
-    {{ end }}
-
-    {{ with $p.skills }}
-      <section class="cv-block" aria-labelledby="cv-skills">
-        <h2 id="cv-skills" class="cv-block-title">Skills</h2>
-        <div class="cv-skills">
-          {{ range . }}
-            <div class="cv-card cv-skill-group">
-              <h3 class="cv-skill-title">{{ .group }}</h3>
-              <ul class="cv-tags cv-tags--plain">
-                {{ range .items }}<li class="cv-tag">{{ . }}</li>{{ end }}
-              </ul>
-            </div>
-          {{ end }}
-        </div>
       </section>
     {{ end }}
 
