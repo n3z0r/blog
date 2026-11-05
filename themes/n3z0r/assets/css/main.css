@@ -430,6 +430,7 @@ body > header {
   letter-spacing: -0.02em;
   line-height: 1.15;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .cv-highlight-label {
@@ -636,7 +637,7 @@ body > header {
 }
 
 .cv-entry-summary {
-  margin: 0 0 0.9rem;
+  margin: 0 0 0.65rem;
   color: #3d4552;
   font-size: 0.96rem;
   line-height: 1.6;
@@ -653,10 +654,10 @@ body > header {
 .cv-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.25rem;
   list-style: none;
   margin: 0;
-  padding: 0.8rem 0 0;
+  padding: 0.55rem 0 0;
   border-top: 1px solid #cfd4de;
 }
 
@@ -671,7 +672,7 @@ body > header {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.2;
-  padding: 0.25rem 0.6rem;
+  padding: 0.18rem 0.48rem;
   border-radius: 6px;
   background-color: #d8dce3;
   border: 1px solid #b8bec9;

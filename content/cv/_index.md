@@ -14,7 +14,7 @@ params:
     repeatable processes.
 
   highlights:
-    - value: "10+"
+    - value: "10 +"
       label: "years in tech"
       detail:
         - >-
