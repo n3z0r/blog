@@ -24,8 +24,15 @@ All content comes from the `params` block in content/cv/_index.md.
               aria-haspopup="dialog"
               aria-controls="cv-highlight-dialog-{{ $i }}"
             >
-              <span class="cv-highlight-value">{{ $h.value }}</span>
-              <span class="cv-highlight-label">{{ $h.label }}</span>
+              <span class="cv-highlight-main">
+                <span class="cv-highlight-value">{{ $h.value }}</span>
+                <span class="cv-highlight-label">{{ $h.label }}</span>
+              </span>
+              <span class="cv-highlight-cue" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </span>
             </button>
           </li>
         {{ end }}
