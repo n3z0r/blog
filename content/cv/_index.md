@@ -130,7 +130,7 @@ params:
           Restructured the directory across departments and devices, working
           with principal investigators, laboratory leaders and infrastructure
           teams to avoid disruption to active experiments.
-      tags: ["Workstation refresh", "Deployment automation", "Security compliance", "Directory services", "Cross-platform (Windows & macOS)", "Research environments"]
+      tags: ["Workstation refresh", "Deployment automation", "Security compliance", "Cross-platform (Windows & macOS)", "Research environments"]
 
     - period: "2017 – 2018"
       role: "Junior IT Support Technician"
@@ -147,7 +147,7 @@ params:
           system to a VoIP platform. Also looked after cloud productivity
           tenancies, endpoint security and meeting-room AV, and wrote guides in
           the team knowledge base.
-      tags: ["Multi-site support", "User onboarding", "Cross-platform (Windows & macOS)", "Structured cabling & patching", "VoIP migration", "Cloud administration", "Endpoint security", "Knowledge base"]
+      tags: ["User onboarding", "Structured cabling & patching", "VoIP migration", "Cloud administration", "Endpoint security", "Knowledge base"]
 
     - period: "2012 – 2017"
       role: "Full Stack Developer / IT Consultant"
@@ -165,7 +165,7 @@ params:
           network-attached storage (NAS) and local office networks. Managed
           equipment lifecycle upgrades and web traffic analytics, and offered
           on-call remote troubleshooting to keep daily operations reliable.
-      tags: ["Full-stack development", "Linux web hosting", "E-commerce & CMS", "Windows & Linux servers", "NAS storage solutions", "SMB infrastructure", "Remote support", "Client enablement"]
+      tags: ["Full-stack development", "Linux web hosting", "E-commerce & CMS", "Windows & Linux servers", "NAS storage solutions", "SMB infrastructure", "Client enablement"]
 
     - period: "2014 – 2015"
       role: "IT Systems Administrator"
@@ -186,7 +186,7 @@ params:
           supply and distribution workflows, wrote operational documentation
           under military policy, and trained incoming personnel for the IT
           post.
-      tags: ["Systems administration", "Directory services", "On-premises infrastructure", "Military security standards", "Backup & recovery", "IIS web hosting", "Technical documentation & training"]
+      tags: ["Systems administration", "On-premises infrastructure", "Military security standards", "Backup & recovery", "IIS web hosting", "Technical documentation & training"]
 
   skills:
     - group: "Endpoint engineering"

@@ -651,6 +651,98 @@ body > header {
   margin-bottom: 0;
 }
 
+.cv-acquired {
+  margin: 0;
+  padding: 0.55rem 0 0;
+  border-top: 1px solid #cfd4de;
+}
+
+.cv-acquired-title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem;
+  margin: 0 0 0.35rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 8px;
+  background-color: #2b303c;
+  border: 1px solid #6d788d;
+  color: #f3f5f8;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  list-style: none;
+  box-shadow: 0 3px 10px rgba(28, 32, 40, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.cv-acquired-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #dfe3ea;
+}
+
+.cv-acquired-title::-webkit-details-marker {
+  display: none;
+}
+
+.cv-acquired-title:hover,
+.cv-acquired-title:focus-visible {
+  transform: translateY(-1px);
+  border-color: #00e;
+  box-shadow: 0 8px 20px rgba(28, 32, 40, 0.18);
+}
+
+.cv-acquired-title:active {
+  transform: translateY(0) scale(0.985);
+}
+
+.cv-acquired-title:focus-visible {
+  outline: 2px solid #00e;
+  outline-offset: 2px;
+}
+
+.cv-acquired-cue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #dfe3ea;
+  flex-shrink: 0;
+  transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.cv-acquired-cue svg {
+  width: 9px;
+  height: 9px;
+}
+
+.cv-acquired-title:hover .cv-acquired-cue,
+.cv-acquired-title:focus-visible .cv-acquired-cue {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateX(2px);
+}
+
+.cv-acquired[open] .cv-acquired-title:hover .cv-acquired-cue,
+.cv-acquired[open] .cv-acquired-title:focus-visible .cv-acquired-cue {
+  transform: translateX(2px) rotate(90deg);
+}
+
+.cv-acquired[open] .cv-acquired-cue {
+  transform: rotate(90deg);
+}
+
+.cv-acquired[open] .cv-acquired-title {
+  margin-bottom: 0;
+}
+
 .cv-tags {
   display: flex;
   flex-wrap: wrap;
@@ -658,7 +750,7 @@ body > header {
   list-style: none;
   margin: 0;
   padding: 0.55rem 0 0;
-  border-top: 1px solid #cfd4de;
+  border-top: 0;
 }
 
 .cv-tags--plain {
@@ -800,7 +892,25 @@ body > header {
   }
 
   .cv-card {
-    padding: 1.1rem 1.15rem;
+    padding: 1rem 1.15rem 0.95rem;
+  }
+
+  .cv-entry {
+    padding-bottom: 0.95rem;
+  }
+
+  /* Mobile list view: pills become a single-column list inside the
+     expandable area (already sorted longest-first in the template). */
+  .cv-acquired .cv-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding-top: 0.5rem;
+  }
+
+  .cv-acquired .cv-tag {
+    justify-content: flex-start;
+    text-align: left;
   }
 
   .cv-skills {
