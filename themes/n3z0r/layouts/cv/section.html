@@ -97,9 +97,29 @@ All content comes from the `params` block in content/cv/_index.md.
                   {{ end }}
                 {{ end }}
                 {{ with .tags }}
-                  <ul class="cv-tags" aria-label="Technologies">
-                    {{ range . }}<li class="cv-tag">{{ . }}</li>{{ end }}
-                  </ul>
+                  <details class="cv-acquired">
+                    <summary class="cv-acquired-title">
+                      <span class="cv-acquired-label">Skills Acquired</span>
+                      <span class="cv-acquired-cue" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                      </span>
+                    </summary>
+                    <ul class="cv-tags" aria-label="Skills Acquired">
+                      {{/* Sort by word count (most words first); char length
+                           only breaks ties so the longest phrases lead. */}}
+                      {{ $pairs := slice }}
+                      {{ range . }}
+                        {{ $words := len (split . " ") }}
+                        {{ $score := add (mul $words 1000) (len .) }}
+                        {{ $pairs = $pairs | append (dict "text" . "score" $score) }}
+                      {{ end }}
+                      {{ range sort $pairs "score" "desc" }}
+                        <li class="cv-tag">{{ .text }}</li>
+                      {{ end }}
+                    </ul>
+                  </details>
                 {{ end }}
               </div>
             </li>
